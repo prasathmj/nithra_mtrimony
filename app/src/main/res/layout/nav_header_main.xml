@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/first">
+<RelativeLayout
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_alignParentTop="true"
+    android:background="#ACA9A9">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_alignParentBottom="true"
+    android:gravity="center"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="25dp"
+    >
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_back"
+        android:padding="10dp"
+        android:hint="Search Here"
+        android:cursorVisible="true"
+        android:lines="1"
+        android:drawableRight="@drawable/ic_search_black_24dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+        android:textColor="@color/grey_80">
+        <requestFocus/>
+    </EditText>
+
+
+</LinearLayout>
+
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/top">
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/second">
+        <RelativeLayout
+            android:id="@+id/top1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:background="#ACA9A9">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="25dp"
+                >
+                <EditText
+                    android:id="@+id/search_bar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_back"
+                    android:padding="10dp"
+                    android:hint="Search Here"
+                    android:cursorVisible="true"
+                    android:lines="1"
+                    android:drawableRight="@drawable/ic_search_black_24dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                    android:textColor="@color/grey_80">
+                    <requestFocus/>
+                </EditText>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/top1">
+            <ListView
+                android:id="@+id/list1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

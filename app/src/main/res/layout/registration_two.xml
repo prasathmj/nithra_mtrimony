@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorAccent">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Basic Informations"
+            android:textColor="#ffffff"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="5dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:background="#B8B5B5"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:textColor="@color/grey_80"
+                android:text="Sub Caste"/>
+            <EditText
+                android:id="@+id/sub_caste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="13dp"
+                android:lines="1"
+                android:hint="Not Specify"
+                android:inputType="textEmailAddress"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/spinner_back"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                >
+
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:textColor="@color/grey_80"
+                android:text="Gothra(m)"/>
+            <EditText
+                android:id="@+id/gothram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="13dp"
+                android:lines="1"
+                android:hint="Not Specify"
+                android:inputType="textEmailAddress"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/spinner_back"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                >
+
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:textColor="@color/grey_80"
+                android:text="Height"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/spinner_back"
+                >
+
+                <TextView
+                    android:id="@+id/height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:hint="Not Specify"
+                    android:lines="1"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:textColor="@color/grey_80"
+                android:text="Weight"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/spinner_back"
+                >
+
+                <TextView
+                    android:id="@+id/weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:hint="Not Specify"
+                    android:lines="1"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:textColor="@color/grey_80"
+                android:text="Body Type"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/spinner_back"
+                >
+
+                <TextView
+                    android:id="@+id/body_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:hint="Not Specify"
+                    android:lines="1"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:textColor="@color/grey_80"
+                android:text="Complexion"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/spinner_back"
+                >
+
+                <TextView
+                    android:id="@+id/complexion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:hint="Not Specify"
+                    android:lines="1"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:textColor="@color/grey_80"
+                android:text="Any Disability"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/spinner_back"
+                >
+
+                <TextView
+                    android:id="@+id/any_disability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:hint="Not Specify"
+                    android:lines="1"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Horoscopes Informations"
+            android:textColor="#ffffff"
+            android:paddingBottom="8dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="5dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:background="#A09F9F"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:textColor="@color/grey_80"
+                android:text="Rasi"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/spinner_back"
+                >
+
+                <TextView
+                    android:id="@+id/rasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:hint="Not Specify"
+                    android:lines="1"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:textColor="@color/grey_80"
+                android:text="Star/Natchathiram"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/spinner_back"
+                >
+
+                <TextView
+                    android:id="@+id/natchathiram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:hint="Not Specify"
+                    android:lines="1"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:textColor="@color/grey_80"
+                android:text="Having Dosham"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/spinner_back"
+                >
+
+                <TextView
+                    android:id="@+id/having_dhosam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:hint="Not Specify"
+                    android:lines="1"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/liner_having_dosam"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:textColor="@color/grey_80"
+                android:text="Dosham"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/spinner_back"
+                >
+
+                <TextView
+                    android:id="@+id/dhosam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:hint="Not Specify"
+                    android:lines="1"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location Informations"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="5dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:background="#A09F9F"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:textColor="@color/grey_80"
+                android:text="Country Living in"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/spinner_back"
+                >
+
+                <TextView
+                    android:id="@+id/country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:hint="Not Specify"
+                    android:lines="1"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:textColor="@color/grey_80"
+                android:text="State Living in"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/spinner_back"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:hint="Not Specify"
+                    android:lines="1"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                    />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/edt_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="13dp"
+                android:lines="1"
+                android:visibility="gone"
+                android:hint="Not Specify"
+                android:inputType="textEmailAddress"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/spinner_back"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                >
+
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                android:textColor="@color/grey_80"
+                android:text="City Living in"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/spinner_back"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="13dp"
+                    android:hint="Not Specify"
+                    android:lines="1"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                    />
+
+            </LinearLayout>
+            <EditText
+                android:id="@+id/edt_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="13dp"
+                android:lines="1"
+                android:visibility="gone"
+                android:hint="Not Specify"
+                android:inputType="textEmailAddress"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/spinner_back"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                >
+
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#E7E6E6"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/skip"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_rounded_red_out_line"
+                    android:text="SKIP"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/red_300"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/buttonContinue"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_rounded_red"
+                android:text="NEXT"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+</RelativeLayout>
